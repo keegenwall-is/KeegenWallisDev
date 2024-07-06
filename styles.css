@@ -475,7 +475,7 @@ footer {
     }
 
     .connect-flex-item img {
-        width: 100%;
+        width: 50px;
         height: auto;
         display: block;
         margin: 0 auto;
