@@ -178,6 +178,10 @@ strong {
     width: calc(100% - 20px);
 }
 
+.solo-flex-img {
+    max-width: 50%;
+}
+
 .about-me-flex-container {
     display: flex;
     flex-wrap: nowrap;
@@ -382,7 +386,7 @@ footer {
 }
 
 /* Media Queries */
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 960px) {
     .navbar {
         flex-direction: row;
         justify-content: center;
@@ -398,7 +402,34 @@ footer {
     }
 }
 
-@media screen and (max-width: 599px) {
+@media screen and (max-width: 959px) {
+
+    .welcome-content {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .welcome-content img, .welcome-content p {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .pfp-image {
+        max-width: 100%;
+        height: auto;
+        padding: 10px;
+    }
 
     .flex-container {
         flex-direction: column;
@@ -407,5 +438,54 @@ footer {
 
     .flex-item {
         flex: 1 1 100%;
+    }
+
+    .about-me-flex-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+    }
+
+    .about-me-flex-item {
+        width: 100%;
+        max-width: 100%;
+    }
+
+        .about-me-flex-item img {
+            width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+    .about-me-points {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .connect-flex-container {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .connect-flex-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .solo-flex-img {
+        max-width: 100%;
+    }
+
+    iframe {
+        width: 100%;
     }
 }
