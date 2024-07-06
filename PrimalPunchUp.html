@@ -2,125 +2,139 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Primal Punch-Up</title>
     <link rel="icon" href="images/ProfilePic.jpg" type="image/png">
 </head>
 <body>
-<header>
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="AboutMe.html">About Me</a>
-        <div class="dropdown">
-            <button class="dropbtn">My Projects
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="PrimalPunchUp.html">★ Primal Punch-Up</a>
-                <a href="OSP.html">Guardian of Geist</a>
-                <a href="EtherealEnforcers.html">Ethereal Enforcers</a>
-                <a href="MASHRemake.html">M*A*S*H Remake</a>
-                <a href="OtherProjects.html">Other Projects</a>
+    <header>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="AboutMe.html">About Me</a>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    My Projects
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="PrimalPunchUp.html">★ Primal Punch-Up</a>
+                    <a href="OSP.html">Guardian of Geist</a>
+                    <a href="EtherealEnforcers.html">Ethereal Enforcers</a>
+                    <a href="MASHRemake.html">M*A*S*H Remake</a>
+                    <a href="OtherProjects.html">Other Projects</a>
+                </div>
             </div>
+            <a href="ContactMe.html">Contact</a>
         </div>
-        <a href="ContactMe.html">Contact</a>
+    </header>
+    <div>
+        <h1>Primal Punch-Up</h1>
+        <img class="hidden" width="10%" src="images/UnityLogo.png">
+        <hr>
     </div>
-</header>
-<div>
-    <h1>Primal Punch-Up</h1>
-    <img class="hidden" width="10%" src="images/UnityLogo.png">
-    <hr>
-</div>
-<div class="hidden">
-    <p class="welcome-content">Primal Punch-Up is a 1-4 player game where you and your friends choose a hero from a selection of animal ninjas and battle in a local PVP experience. 
-        Become victorious by collecting the most fruit and protecting it until the time runs out.
-        Discover unique power-ups and traps, and use them to defeat your enemies and steal their fruit.
-        Choose your strategy to ensure you are victorious and become the ultimate champion!
-    </p>
-</div>
-<div class="hidden video-container">
-    <h2>Gameplay</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/HLrrOLpAiZw?si=tt7iRng9hWWv_Pl3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</div>
-<div class="hidden">
-    <h2>Development Process</h2>
-    <p class="content">Primal Punch-Up was made by me and a group of 4 other students using an <b>agile development approach</b>.
-        Over the course of 4 sprints, each lasting 2-3 weeks, different iterations of the game were produced,
-        from a tech demo all the way to a polished final product. Each sprint, <b>play-tests</b> were held with other
-        members of the class and after each student had played the game they could then fill out a google form to give feedback. This
-        aided us in defining our <b>goals (written as user-stories)</b> for the next sprint. Each sprint also consisted of at least
-        4 <b>SCRUM meetings</b>, where user stories mapped on our trello board would be updated to their appropriate section, and the team
-        would discuss their recent contributions as well as any factors that could inhibit further development.
-    </p>
-</div>
-<div class="hidden">
-    <h2>Challenges in Development</h2>
-    <p>Throughout the development process there were many challenges that required me and my team members to learn new skills:</p>
-</div>
+    <div class="hidden">
+        <p class="welcome-content">
+            Primal Punch-Up is a 1-4 player game where you and your friends choose a hero from a selection of animal ninjas and battle in a local PVP experience.
+            Become victorious by collecting the most fruit and protecting it until the time runs out.
+            Discover unique power-ups and traps, and use them to defeat your enemies and steal their fruit.
+            Choose your strategy to ensure you are victorious and become the ultimate champion!
+        </p>
+    </div>
+    <div class="hidden video-container">
+        <h2>Gameplay</h2>
+        <iframe max-width="560" height="315" src="https://www.youtube.com/embed/HLrrOLpAiZw?si=tt7iRng9hWWv_Pl3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="hidden">
+        <h2>Development Process</h2>
+        <p class="content">
+            Primal Punch-Up was made by me and a group of 4 other students using an <b>agile development approach</b>.
+            Over the course of 4 sprints, each lasting 2-3 weeks, different iterations of the game were produced,
+            from a tech demo all the way to a polished final product. Each sprint, <b>play-tests</b> were held with other
+            members of the class and after each student had played the game they could then fill out a google form to give feedback. This
+            aided us in defining our <b>goals (written as user-stories)</b> for the next sprint. Each sprint also consisted of at least
+            4 <b>SCRUM meetings</b>, where user stories mapped on our trello board would be updated to their appropriate section, and the team
+            would discuss their recent contributions as well as any factors that could inhibit further development.
+        </p>
+    </div>
+    <div class="hidden">
+        <h2>Challenges in Development</h2>
+        <p>Throughout the development process there were many challenges that required me and my team members to learn new skills:</p>
+    </div>
 
-<div class="flex-container">
-    <div class="flex-item hidden">
-        <p><b>Blender 4.0:</b> Blender was used to create simple meshes and to rig bones to character meshes so that they could be animated using Mixamo. 
-            Unique character movements allowed for visual clarity and user visual feedback.</p>
-        <img src="images/PPU%20Blender.png">
+    <div class="flex-container">
+        <div class="flex-item hidden">
+            <p>
+                <b>Blender 4.0:</b> Blender was used to create simple meshes and to rig bones to character meshes so that they could be animated using Mixamo.
+                Unique character movements allowed for visual clarity and user visual feedback.
+            </p>
+            <img src="images/PPU%20Blender.png">
+        </div>
+        <div class="flex-item hidden">
+            <p>
+                <b>Controller Inputs:</b> For the local multiplayer feel we wanted to achieve, we needed to learn how to use Unity's controller input system,
+                how to implement it's functions in code, and how to allow controllers to interact with UI.
+            </p>
+            <img src="images/PPU%20Character%20Select.png"> .
+        </div>
+        <div class="flex-item hidden">
+            <p>
+                <b>Local Multiplayer:</b> We created a split screen effect by dynamically changing camera components based on player number, and also created
+                multiple UI versions for differing numbers of players.
+            </p>
+            <img src="images/PPU%20UI.png">
+        </div>
+        <div class="flex-item hidden">
+            <p>
+                <b>PvP Combat:</b> Character abilities were reworked, balanced and fine-tuned based on player feedback, so that combat
+                could feel satisfying to play, but also fair to play against.
+            </p>
+            <br>
+            <img src="images/PPU%20Balancing.png">
+        </div>
+        <div class="flex-item hidden">
+            <p>
+                <b>Animation Events:</b> Functions had to be called from character scripts based on specific frames of an animation, so that
+                hit-boxes and animations could be synced.
+            </p>
+            <img src="images/PPU%20Animations.png">
+        </div>
     </div>
-    <div class="flex-item hidden">
-        <p><b>Controller Inputs:</b> For the local multiplayer feel we wanted to achieve, we needed to learn how to use Unity's controller input system, 
-            how to implement it's functions in code, and how to allow controllers to interact with UI.</p>
-        <img src="images/PPU%20Character%20Select.png"> .
-    </div>
-    <div class="flex-item hidden">
-        <p><b>Local Multiplayer:</b> We created a split screen effect by dynamically changing camera components based on player number, and also created 
-            multiple UI versions for differing numbers of players.</p>
-        <img src="images/PPU%20UI.png"> 
-    </div>
-    <div class="flex-item hidden">
-        <p><b>PvP Combat:</b> Character abilities were reworked, balanced and fine-tuned based on player feedback, so that combat 
-            could feel satisfying to play, but also fair to play against.</p>
-        <br>
-        <img src="images/PPU%20Balancing.png">
-    </div>
-    <div class="flex-item hidden">
-        <p><b>Animation Events:</b> Functions had to be called from character scripts based on specific frames of an animation, so that 
-            hit-boxes and animations could be synced.</p>
-        <img src="images/PPU%20Animations.png">
-    </div>
-</div>
 
-<footer class="hidden">
-    <div class="footer-content">
-        <p>&copy; 2024 Keegen Wallis Dev. All Rights Reserved.</p>
-        <a href="https://www.linkedin.com/in/keegen-wallis-613b95286/">
-            <img width="50px" class="footer-href" src="images/LinkedInLogo.webp">
-        </a>
-        <a href="https://snedulekko.itch.io/">
-            <img width="50px" class="footer-href" src="images/ItchLogo.webp">
-        </a>
-        <a href="https://github.com/keegenwall-is">
-            <img width="50px" class="footer-href" src="images/GitHubLogo.png">
-        </a>
-    </div>
-</footer>
+    <footer class="hidden">
+        <div class="footer-content">
+            <p>&copy; 2024 Keegen Wallis Dev. All Rights Reserved.</p>
+            <a href="https://www.linkedin.com/in/keegen-wallis-613b95286/">
+                <img width="50px" class="footer-href" src="images/LinkedInLogo.webp">
+            </a>
+            <a href="https://snedulekko.itch.io/">
+                <img width="50px" class="footer-href" src="images/ItchLogo.webp">
+            </a>
+            <a href="https://github.com/keegenwall-is">
+                <img width="50px" class="footer-href" src="images/GitHubLogo.png">
+            </a>
+        </div>
+    </footer>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const hiddenElements = document.querySelectorAll('.hidden');
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hiddenElements = document.querySelectorAll('.hidden');
 
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    entry.target.classList.remove('hidden');
-                    observer.unobserve(entry.target);
-                }
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        entry.target.classList.remove('hidden');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            hiddenElements.forEach(element => {
+                observer.observe(element);
             });
-        }, { threshold: 0.1 });
-
-        hiddenElements.forEach(element => {
-            observer.observe(element);
         });
-    });
-</script>
+    </script>
 
 </body>
 </html>

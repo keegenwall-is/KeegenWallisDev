@@ -2,186 +2,196 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
     <title>Guardian of Geist</title>
     <link rel="icon" href="images/ProfilePic.jpg" type="image/png">
 </head>
 <body>
-<header>
-    <div class="navbar">
-        <a href="index.html">Home</a>
-        <a href="AboutMe.html">About Me</a>
-        <div class="dropdown">
-            <button class="dropbtn">My Projects
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content">
-                <a href="PrimalPunchUp.html">★ Primal Punch-Up</a>
-                <a href="OSP.html">Guardian of Geist</a>
-                <a href="EtherealEnforcers.html">Ethereal Enforcers</a>
-                <a href="MASHRemake.html">M*A*S*H Remake</a>
-                <a href="OtherProjects.html">Other Projects</a>
+    <header>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="AboutMe.html">About Me</a>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    My Projects
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="PrimalPunchUp.html">★ Primal Punch-Up</a>
+                    <a href="OSP.html">Guardian of Geist</a>
+                    <a href="EtherealEnforcers.html">Ethereal Enforcers</a>
+                    <a href="MASHRemake.html">M*A*S*H Remake</a>
+                    <a href="OtherProjects.html">Other Projects</a>
+                </div>
             </div>
+            <a href="ContactMe.html">Contact</a>
         </div>
-        <a href="ContactMe.html">Contact</a>
+    </header>
+    <div>
+        <h1>Guardian of Geist</h1>
+        <img class="hidden" width="10%" src="images/UnityLogo.png">
+        <hr>
     </div>
-</header>
-<div>
-    <h1>Guardian of Geist</h1>
-    <img class="hidden" width="10%" src="images/UnityLogo.png">
-    <hr>
-</div>
 
-<div class="hidden">
-    <p class="welcome-content">Guardian of Geist is currently a tech demo version of a roguelite game. Play as a firey warrior, taking
-        on a dungeon of ghouls and wizards. Current plans for the future development of the game will see randomly generated
-        maps, passive stat-based and active ability items, giant boss fights, as well as more playable characters joining the roster.
-    </p>
-</div>
-<div class="hidden">
-    <h2>Gameplay</h2>
-    <div class="slideshow-container hidden">
-
-        <!-- Full-width images with number and caption text -->
-        <div class="mySlides fade">
-            <img src="images/OSP%20Start%20Screen.png" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-            <img src="images/GoGFireUlti.png" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-            <img src="images/GoGFireWheel.png" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-            <img src="images/GoGPlayerHit.png" style="width:100%">
-        </div>
-
-        <div class="mySlides fade">
-            <img src="images/GoGRedWizSpawn.png" style="width:100%">
-        </div>
-
-        <!-- Next and previous buttons -->
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-    </div>
-    <br>
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-    </div>
-    
-</div>
-<div class="hidden">
-    <h2>Development Process</h2>
-    <p class="content">Guardian of Geist is a game currently being created as a solo project. Development has been slow as most of the
-        work has had to be undertaken between semesters of study (as seen in lengthy periods of inactivity in it's GitHub history). Despite this, the development of the game has given me the 
-        opportunity to <b>put programming patterns and algorithms</b> learned throughout each semester, <b>into practice</b> in a new and creative way.
-        The tech demo is already a fun and exciting experience, so I'm greatly looking forward to where I might be able to take further
-        development of this project in the future.
-    </p>
-</div>
-<div class="hidden">
-    <h2>Challenges in Development</h2>
-    <p>This project has been used to consolidate programming skills learned throughout different subjects over the course of my degree:</p>
-</div>
-
-<div class="flex-container">
-    <div class="flex-item hidden">
-        <p><b>A* Pathfinding:</b> The enemy AI pathfinding algorithm was written from scratch, and is responsible for enemy movement through a tree of nodes.
-        This allows for more unique and engaging combat and interactions with enemy AI.
+    <div class="hidden">
+        <p class="welcome-content">
+            Guardian of Geist is currently a tech demo version of a roguelite game. Play as a firey warrior, taking
+            on a dungeon of ghouls and wizards. Current plans for the future development of the game will see randomly generated
+            maps, passive stat-based and active ability items, giant boss fights, as well as more playable characters joining the roster.
         </p>
-        <img src="images/GoGRedWizSpawn.png">
     </div>
-    <div class="flex-item hidden">
-        <p><b>Cool-downs and simple HUD UI:</b> This is essential in giving the player visual feedback from the UI of their ability usage. It also allows for players 
-            to strategically time their next upcoming attacks against enemies.</p>
-        <img src="images/GoGFireWheel.png">
+    <div class="hidden">
+        <h2>Gameplay</h2>
+        <div class="slideshow-container hidden">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <img src="images/OSP%20Start%20Screen.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/GoGFireUlti.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/GoGFireWheel.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/GoGPlayerHit.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/GoGRedWizSpawn.png" style="width:100%">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+
     </div>
-    <div class="flex-item hidden">
-        <p><b>Tile Mapping and Map Creation:</b> Visuals and backgrounds had to be layered around the player so that their movement in a 2D space appears 3D. This creates
-        an engaging and "realistic" world for the player to experience.
+    <div class="hidden">
+        <h2>Development Process</h2>
+        <p class="content">
+            Guardian of Geist is a game currently being created as a solo project. Development has been slow as most of the
+            work has had to be undertaken between semesters of study (as seen in lengthy periods of inactivity in it's GitHub history). Despite this, the development of the game has given me the
+            opportunity to <b>put programming patterns and algorithms</b> learned throughout each semester, <b>into practice</b> in a new and creative way.
+            The tech demo is already a fun and exciting experience, so I'm greatly looking forward to where I might be able to take further
+            development of this project in the future.
         </p>
-        <img src="images/GoGTileMapping.png">
     </div>
-    <div class="flex-item hidden">
-        <p><b>Dynamic Node Connections:</b> To be able to create new maps and areas quickly and easily without needing to manually connect nodes, the nodes are connected
-            for pathfinding automatically if they are placed within the correct range of each other.</p>
-        <img src="images/GoGNodes.png">
+    <div class="hidden">
+        <h2>Challenges in Development</h2>
+        <p>This project has been used to consolidate programming skills learned throughout different subjects over the course of my degree:</p>
     </div>
-</div>
 
-<footer class="hidden">
-    <div class="footer-content">
-        <p>&copy; 2024 Keegen Wallis Dev. All Rights Reserved.</p>
-        <a href="https://www.linkedin.com/in/keegen-wallis-613b95286/">
-            <img width="50px" class="footer-href" src="images/LinkedInLogo.webp">
-        </a>
-        <a href="https://snedulekko.itch.io/">
-            <img width="50px" class="footer-href" src="images/ItchLogo.webp">
-        </a>
-        <a href="https://github.com/keegenwall-is">
-            <img width="50px" class="footer-href" src="images/GitHubLogo.png">
-        </a>
+    <div class="flex-container">
+        <div class="flex-item hidden">
+            <p>
+                <b>A* Pathfinding:</b> The enemy AI pathfinding algorithm was written from scratch, and is responsible for enemy movement through a tree of nodes.
+                This allows for more unique and engaging combat and interactions with enemy AI.
+            </p>
+            <img src="images/GoGRedWizSpawn.png">
+        </div>
+        <div class="flex-item hidden">
+            <p>
+                <b>Cool-downs and simple HUD UI:</b> This is essential in giving the player visual feedback from the UI of their ability usage. It also allows for players
+                to strategically time their next upcoming attacks against enemies.
+            </p>
+            <img src="images/GoGFireWheel.png">
+        </div>
+        <div class="flex-item hidden">
+            <p>
+                <b>Tile Mapping and Map Creation:</b> Visuals and backgrounds had to be layered around the player so that their movement in a 2D space appears 3D. This creates
+                an engaging and "realistic" world for the player to experience.
+            </p>
+            <img src="images/GoGTileMapping.png">
+        </div>
+        <div class="flex-item hidden">
+            <p>
+                <b>Dynamic Node Connections:</b> To be able to create new maps and areas quickly and easily without needing to manually connect nodes, the nodes are connected
+                for pathfinding automatically if they are placed within the correct range of each other.
+            </p>
+            <img src="images/GoGNodes.png">
+        </div>
     </div>
-</footer>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function() {
-        const hiddenElements = document.querySelectorAll('.hidden');
+    <footer class="hidden">
+        <div class="footer-content">
+            <p>&copy; 2024 Keegen Wallis Dev. All Rights Reserved.</p>
+            <a href="https://www.linkedin.com/in/keegen-wallis-613b95286/">
+                <img width="50px" class="footer-href" src="images/LinkedInLogo.webp">
+            </a>
+            <a href="https://snedulekko.itch.io/">
+                <img width="50px" class="footer-href" src="images/ItchLogo.webp">
+            </a>
+            <a href="https://github.com/keegenwall-is">
+                <img width="50px" class="footer-href" src="images/GitHubLogo.png">
+            </a>
+        </div>
+    </footer>
 
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    entry.target.classList.remove('hidden');
-                    observer.unobserve(entry.target);
-                }
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hiddenElements = document.querySelectorAll('.hidden');
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        entry.target.classList.remove('hidden');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            hiddenElements.forEach(element => {
+                observer.observe(element);
             });
-        }, { threshold: 0.1 });
-
-        hiddenElements.forEach(element => {
-            observer.observe(element);
         });
-    });
-</script>
+    </script>
 
-<script>
-    let slideIndex = 1;
-    showSlides(slideIndex);
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
 
-    setInterval(function() {
-        plusSlides(1);
-    }, 5000);
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-        showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
+        setInterval(function () {
+            plusSlides(1);
+        }, 5000);
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
         }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
         }
-        slides[slideIndex-1].style.display = "block";
-        dots[slideIndex-1].className += " active";
-    }
-</script>
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
 
 </body>
 </html>

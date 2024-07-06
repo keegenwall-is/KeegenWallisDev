@@ -141,19 +141,19 @@ strong {
     display: flex;
     align-items: center;
     background-color: #9DBEBB;
-    margin: 20px 300px;
+    margin: 20px 25%;
     border-radius: 10px;
 }
 
 .content {
     align-items: center;
     background-color: #9DBEBB;
-    margin: 20px 300px;
+    margin: 20px 25%;
     border-radius: 10px;
 }
 
 .pfp-image {
-    max-width: 300px;
+    max-width: 33%;
     height: auto;
     padding: 20px;
 }
@@ -175,6 +175,7 @@ strong {
     text-align: center;
     flex: 1 1 calc(50% - 20px); /* Adjust based on desired number of columns */
     box-sizing: border-box;
+    width: calc(100% - 20px);
 }
 
 .about-me-flex-container {
@@ -235,7 +236,7 @@ strong {
     }
 
 .flex-item img {
-    max-width: 66vh;
+    width: calc(100% - 20px);
     height: auto;
 }
 
