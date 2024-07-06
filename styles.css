@@ -391,18 +391,3 @@ footer {
         flex: 1 1 calc(50% - 20px);
     }
 }
-
-@media screen and (min-width: 992px) {
-    .welcome-content, .flex-container {
-        margin: 20px 300px;
-    }
-
-    .flex-item {
-        flex: 1 1 calc(33% - 20px);
-    }
-
-    .dropdown-content {
-        position: absolute;
-        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    }
-}
