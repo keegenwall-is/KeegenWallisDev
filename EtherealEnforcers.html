@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Ethereal Enforcers (Prototype)</title>
+    <link rel="icon" href="images/ProfilePic.jpg" type="image/png">
+</head>
+<body>
+<header>
+    <div class="navbar">
+        <a href="Index.html">Home</a>
+        <a href="AboutMe.html">About Me</a>
+        <div class="dropdown">
+            <button class="dropbtn">My Projects
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="PrimalPunchUp.html">★ Primal Punch-Up</a>
+                <a href="OSP.html">Guardian of Geist</a>
+                <a href="EtherealEnforcers.html">Ethereal Enforcers</a>
+                <a href="MASHRemake.html">M*A*S*H Remake</a>
+                <a href="OtherProjects.html">Other Projects</a>
+            </div>
+        </div>
+        <a href="ContactMe.html">Contact</a>
+    </div>
+</header>
+<div>
+    <h1>Ethereal Enforcers (Prototype)</h1>
+    <img class="hidden" width="10%" src="images/UnrealEngineLogo.png">
+    <hr>
+</div>
+
+<div class="hidden">
+    <p class="welcome-content">Ethereal Enforcers is a tech demo created in a team of 2 for an assignment in "Advanced Games Programming", a subject
+        undertaken as part of my study at UTS. Ethereal Enforcers is a game you can play online with your friends, where you hunt a disappearing AI ghost with your vacuum gun in a procedurally
+        generated map. Ring the bell when you think the ghost is near to reveal him, and try to catch him before he slips back into invisibility.
+        Be careful not to ring the bell when he's too far away, else he'll be alerted to your location!
+    </p>
+</div>
+
+<div class="hidden video-container">
+    <h2>Gameplay</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/KF8c_Oe2668?si=svdHetB3ZcJItw5d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+
+<div class="hidden">
+    <h2>Development Process</h2>
+    <p class="content">
+        As a part of the major assignment for this subject, we were tasked with creating a prototype game that used subsystems based on the content of the subject. This
+        lead us to create Ethereal Enforcers, a prototype game, developed over a period of 4 weeks. The first two weeks we were each assigned a subsystem to create. For me it was the controller for
+        the ghosts <b>AI states and behaviour</b> and for my team member it was the <b>procedurally generated map.</b> The next two weeks saw us having to
+        integrate these subsystems together to create the tech demo. In the process, we were also required to <b>refactor code</b> to allow for <b>online multiplayer
+        through multicasting.</b>
+    </p>
+</div>
+<div class="hidden">
+    <h2>Challenges in Development</h2>
+    <p>As an advanced subject of the degree, this assignment carried many challenges, namely:</p>
+</div>
+
+<div class="flex-container">
+    <div class="flex-item hidden">
+        <p><b>AI States and Behaviour:</b> Depending on player movement and interactions, and enemy health, the enumerator currentState of the enemyCharacter script 
+            will change. Depending on the AI state, the enemy will patrol, engage the player, evade, investigate, or guard an area using an A* algorithm.
+        </p>
+        <br>
+        <img src="images/EEAIStates.png">
+    </div>
+    <div class="flex-item hidden">
+        <p><b>Integration of Subsystems:</b> Combining the AI and procedurally generated map subsystems provided new challenges in itself.
+            For example: The test scene for the AI subsystem had nodes connected manually, and a single bell. This meant that the code for the 
+            procedurally generated map needed to be updated to accomodate for automatic node connections and random bell spawns.
+        </p>
+        <img src="images/UE%20Example%20Scene.png">
+    </div>
+    <div class="flex-item hidden">
+        <p><b>Online Multiplayer:</b> Online multiplayer was a new challenge as well. For multiplayer to be implemented, we needed to refactor code
+        so that information could be passed to the server, and then to a multicast function that allows each client to have required information replicated.
+        </p>
+        <img src="images/EEMulticasting.png">
+    </div>
+    <div class="flex-item hidden">
+        <p><b>Blueprint Animations:</b> This was our first time using Unreal Engine and so learning a new editor layout, new terminology, and learning
+        visual scripting in blueprints for animations and visual elements, took some time to understand.
+        </p>
+        <img src="images/EEBlueprints.png">
+    </div>
+</div>
+
+<footer class="hidden">
+    <div class="footer-content">
+        <p>&copy; 2024 Keegen Wallis Dev. All Rights Reserved.</p>
+        <a href="https://www.linkedin.com/in/keegen-wallis-613b95286/">
+            <img width="50px" class="footer-href" src="images/LinkedInLogo.webp">
+        </a>
+        <a href="https://snedulekko.itch.io/">
+            <img width="50px" class="footer-href" src="images/ItchLogo.webp">
+        </a>
+        <a href="https://github.com/keegenwall-is">
+            <img width="50px" class="footer-href" src="images/GitHubLogo.png">
+        </a>
+    </div>
+</footer>
+
+<script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    setInterval(function() {
+        plusSlides(1);
+    }, 5000);
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+    }
+</script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const hiddenElements = document.querySelectorAll('.hidden');
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    entry.target.classList.remove('hidden');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        hiddenElements.forEach(element => {
+            observer.observe(element);
+        });
+    });
+</script>
+
+</body>
+</html>

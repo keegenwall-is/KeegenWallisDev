@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <title>Other Projects</title>
+    <link rel="icon" href="images/ProfilePic.jpg" type="image/png">
+</head>
+<body>
+<header>
+    <div class="navbar">
+        <a href="Index.html">Home</a>
+        <a href="AboutMe.html">About Me</a>
+        <div class="dropdown">
+            <button class="dropbtn">My Projects
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="PrimalPunchUp.html">★ Primal Punch-Up</a>
+                <a href="OSP.html">Guardian of Geist</a>
+                <a href="EtherealEnforcers.html">Ethereal Enforcers</a>
+                <a href="MASHRemake.html">M*A*S*H Remake</a>
+                <a href="OtherProjects.html">Other Projects</a>
+            </div>
+        </div>
+        <a href="ContactMe.html">Contact</a>
+    </div>
+</header>
+<div>
+    <h1>Other Projects</h1>
+    <hr>
+</div>
+<div>
+    <p>Please find other smaller or non-game related projects below:</p>
+</div>
+<div class="flex-container">
+    <div class="flex-item hidden">
+        <h2>Maya Plug-Ins</h2>
+        <p>This Integrity-Checker plug-in was made for <b>Maya</b> using <b>Python</b>. It's purpose was to aid artists by running through a list of common
+        issues that arise in creating animations in Maya, and testing to see if the current scene passes without any issues. Assets that caused tests to fail
+            would be printed in a log below and the issue would be indicated to. These common issues can be seen
+            in the image to the right.
+        </p>
+    </div>
+    <div class="flex-item hidden">
+        <img width="50%" src="images/MayaIntegrityCheck.png">
+    </div>
+    <div class="flex-item hidden">
+        <h2>Work in XCode</h2>
+        <p>While learning to develop in XCode with <b>Swift and SwiftUI</b>, I was able to create a few simple apps; namely a simple bubble pop game app, where
+        the player could select a time and max number of bubbles. Gameplay would see bubbles moving across thee screen and the highest number of bubbles
+        would be saved to a leaderboard with the players name. <br><br> The other notable app I was involved in creating was made in a team of 3, where
+        we used an API to take trivia questions of different categories. High scores were then kept under player names with a combined score across
+        all categories, or individual scores for each category.</p>
+    </div>
+    <div class="flex-item hidden">
+        <img src="images/SwiftUI.png">
+    </div>
+    <div class="flex-item hidden">
+        <h2>This Website</h2>
+        <p>This website was created using <b>HTML, CSS and JavaScript</b>. All videos and content seen on this page were also created and edited by me.
+        <br><br>Thanks for visiting!</p>
+    </div>
+    <div class="flex-item hidden">
+        <img src="images/ThisWebsite.png">
+    </div>
+</div>
+
+<footer class="hidden">
+    <div class="footer-content">
+        <p>&copy; 2024 Keegen Wallis Dev. All Rights Reserved.</p>
+        <a href="https://www.linkedin.com/in/keegen-wallis-613b95286/">
+            <img width="50px" class="footer-href" src="images/LinkedInLogo.webp">
+        </a>
+        <a href="https://snedulekko.itch.io/">
+            <img width="50px" class="footer-href" src="images/ItchLogo.webp">
+        </a>
+        <a href="https://github.com/keegenwall-is">
+            <img width="50px" class="footer-href" src="images/GitHubLogo.png">
+        </a>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const hiddenElements = document.querySelectorAll('.hidden');
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    entry.target.classList.remove('hidden');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        hiddenElements.forEach(element => {
+            observer.observe(element);
+        });
+    });
+</script>
+
+</body>
+</html>

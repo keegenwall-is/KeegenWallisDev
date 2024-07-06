@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta charset="UTF-8">
+    <title>About Me</title>
+    <link rel="icon" href="images/ProfilePic.jpg" type="image/png">
+</head>
+<body>
+<header>
+    <div class="navbar">
+        <a href="Index.html">Home</a>
+        <a href="AboutMe.html">About Me</a>
+        <div class="dropdown">
+            <button class="dropbtn">My Projects
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+                <a href="PrimalPunchUp.html">★ Primal Punch-Up</a>
+                <a href="OSP.html">Guardian of Geist</a>
+                <a href="EtherealEnforcers.html">Ethereal Enforcers</a>
+                <a href="MASHRemake.html">M*A*S*H Remake</a>
+                <a href="OtherProjects.html">Other Projects</a>
+            </div>
+        </div>
+        <a href="ContactMe.html">Contact</a>
+    </div>
+</header>
+<div>
+    <h1>About Me</h1>
+    <hr>
+</div>
+
+<div class="about-me-flex-container">
+    <div class="left-column">
+        <div class="about-me-flex-item hidden">
+            <img class="pfp-image" src="images/AboutMe.jpeg">
+        </div>
+        <div class="about-me-flex-item hidden" style="background-color: #77ACA2">
+            <p class="about-me-points">
+                <strong>Skills</strong>
+                <br>
+                <br><b>- Agile Software Development</b>
+                <br><b>- User Story Development</b>
+                <br><b>- Unity</b>
+                <br><b>- C#</b>
+                <br><b>- Unreal Engine</b>
+                <br><b>- C++</b>
+                <br><b>- Customer Service</b>
+                <br><b>- HTML & CSS</b>
+                <br><b>- Blender 4.0</b>
+                <br><b>- Swift & SwiftUI</b>
+                <br><b>- Autodesk Maya</b>
+                <br><b>- Python</b>
+            </p>
+        </div>
+    </div>
+    <div class="right-column">
+        <div class="about-me-flex-item hidden" style="background-color: #77ACA2">
+            <p class="about-me-points">
+                <strong>Education</strong>
+                <br>
+                <br>- Caringbah Selective High School Graduate
+                <br> &emsp; <b>- Software Design and Development</b>
+                <br> &emsp; <b>- Maths Extension 1</b>
+                <br> &emsp; - English
+                <br> &emsp; - Biology
+                <br> &emsp; - Chemistry
+                <br>
+                <br>- University of Technology Sydney: <b>Bachelor of Science in Games Development</b>
+                <br> &emsp; - Data Structures and Algorithms
+                <br> &emsp; - Game Design Methodologies
+                <br> &emsp; - Advanced Games Programming
+                <br> &emsp; - Game Design Studio 1
+                <br> &emsp; - Technical Direction for 3D Animation and Graphics Projects
+                <br> &emsp; - Application Development in the iOS Environment, <b>et-al.</b>
+            </p>
+        </div>
+        <div class="about-me-flex-item hidden">
+            <p class="about-me-points">
+                <strong>Work Experience</strong>
+                <br>
+                <br>- <b>AIE Work Experience Program</b>
+                <br> &emsp; - Introduction to coding languages including JavaScript. Working with programs such as <b>Maya and Unity</b>
+                <br>- <b>Reliable Computers Oatley:</b> Service Assistant
+                <br> &emsp; - Repairing old and damaged computers and fixing client computers.
+                <br>- <b>Laser Siege:</b> Customer Service
+                <br> &emsp; Games coordinator in both laser tag and paint ball. Cleaning facilities,
+                paint ball equipment and maintaining the fields.
+                <br>- <b>Pera Luggage:</b> Senior Sales Assistant
+                <br> &emsp; Skilled in sales and <b>customer service</b>, product display, open and close, stock take, training team members and cleaning procedures.
+            </p>
+        </div>
+    </div>
+</div>
+
+<footer class="hidden">
+    <div class="footer-content">
+        <p>&copy; 2024 Keegen Wallis Dev. All Rights Reserved.</p>
+        <a href="https://www.linkedin.com/in/keegen-wallis-613b95286/">
+            <img width="50px" class="footer-href" src="images/LinkedInLogo.webp">
+        </a>
+        <a href="https://snedulekko.itch.io/">
+            <img width="50px" class="footer-href" src="images/ItchLogo.webp">
+        </a>
+        <a href="https://github.com/keegenwall-is">
+            <img width="50px" class="footer-href" src="images/GitHubLogo.png">
+        </a>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const hiddenElements = document.querySelectorAll('.hidden');
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    entry.target.classList.remove('hidden');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.1 });
+
+        hiddenElements.forEach(element => {
+            observer.observe(element);
+        });
+    });
+</script>
+
+</body>
+</html>
