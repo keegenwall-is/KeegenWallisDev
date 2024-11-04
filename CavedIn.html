@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Caved In</title>
+    <link rel="icon" href="images/ProfilePic.jpg" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="AboutMe.html">About Me</a>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    My Projects
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="PrimalPunchUp.html">★ Primal Punch-Up</a>
+                    <a href="CavedIn.html">★ Caved In</a>
+                    <a href="OSP.html">Guardian of Geist</a>
+                    <a href="EtherealEnforcers.html">Ethereal Enforcers</a>
+                    <a href="MASHRemake.html">M*A*S*H Remake</a>
+                    <a href="OtherProjects.html">Other Projects</a>
+                </div>
+            </div>
+            <a href="ContactMe.html">Contact</a>
+        </div>
+    </header>
+    <div>
+        <h1>Caved In</h1>
+        <img class="hidden" width="10%" src="images/UnrealEngineLogo.png">
+        <hr>
+    </div>
+
+    <div class="hidden">
+        <p class="welcome-content">
+            Caved-In is an online multiplayer social deduction game, where players work together to collect samples in a randomly generated cave system. Durnig their exploration
+            players may get infected by hazards or enemies allowing them to place traps and sabotage cave systems. Try to navigate the cave systems, avoid getting infected and
+            work with your team. But be careful of who you trust!
+        </p>
+    </div>
+
+    <div class="hidden">
+        <h2>Gameplay</h2>
+        <div class="slideshow-container hidden">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <img src="images/CIMenu.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/CICharacterSelect.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/CIElevator.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/CISporeField.png" style="width:100%">
+            </div>
+
+            <div class="mySlides fade">
+                <img src="images/CIGameOver.png" style="width:100%">
+            </div>
+
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+        </div>
+
+    </div>
+
+    <div class="hidden">
+        <h2>Development Process</h2>
+        <p class="content">
+            Caved-In was made in a team of 4 programmers and 1 sound design student for our capstone project in Game Design Studio 2. The game was created using agile software
+            development techniques over the course of 5, <b>2-3 week sprints</b>. Each sprint required us to use project planning tools including Atlassian's <b>Jira and Confluence</b>, to record all
+            <b>SCRUM and reflective meeetings</b>. Similarly to 'Primal Punch-Up' <b>playtesting was held bi-weekly</b>, with google forms allowing feedback to be collected. <b>User stories</b> were written
+            at the start of each sprint based on this user feedback, allowing us to <b>order goals by priority and size</b>.
+        </p>
+    </div>
+    <div class="hidden">
+        <h2>Challenges in Development</h2>
+        <p>This project provided an array of new tasks and challenges for the team to overcome:</p>
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-item hidden">
+            <p>
+                <b>Online Multiplayer and Advanced Sessions:</b> Creating and managing sessions to allow for players to connect and play with friends provided a new challenge. Similarly,
+                there was much to be learnt about interactions between servers and clients particularly in Unreal Engine's game mode and state classes.
+            </p>
+            <img src="images/CILobby.png">
+        </div>
+        <div class="flex-item hidden">
+            <p>
+                <b>Polish and UI Animations:</b>  Sprint 5 focused on polishing the content that we had already implemented, giving us the change to focus on the smaller details such as UI animations
+                that help to provide a finished, professional feel.
+            </p>
+            <br>
+            <img src="images/CIUIAnim.png">
+        </div>
+        <div class="flex-item hidden">
+            <p>
+                <b>Jira Backlog and Scope Creep:</b> This project had a lot of big ideas at conception, that were not all able to be implemented in the time-frame of the subject. This required us
+                to have to prioritize and order tasks and manage the time we did have, to get a working game completed. Addtional content and fixes are currently planned, even post
+                the subjects completion.
+            </p>
+            <img src="images/CIJira.png">
+        </div>
+        <div class="flex-item hidden">
+            <p>
+                <b>Blueprint Implementable Events:</b> Learning to incorporate Unreals blueprint node system with C++ functions was challenging at first, but eventually allowed us to
+                easily incorporate visual features, including animations and UI and to call these features from code.
+            </p>
+            <img src="images/CIBP.png">
+        </div>
+    </div>
+
+    <footer class="hidden">
+        <div class="footer-content">
+            <p>&copy; 2024 Keegen Wallis Dev. All Rights Reserved.</p>
+            <a href="https://www.linkedin.com/in/keegen-wallis-613b95286/">
+                <img width="50px" class="footer-href" src="images/LinkedInLogo.webp">
+            </a>
+            <a href="https://snedulekko.itch.io/">
+                <img width="50px" class="footer-href" src="images/ItchLogo.webp">
+            </a>
+            <a href="https://github.com/keegenwall-is">
+                <img width="50px" class="footer-href" src="images/GitHubLogo.png">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        setInterval(function () {
+            plusSlides(1);
+        }, 5000);
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hiddenElements = document.querySelectorAll('.hidden');
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        entry.target.classList.remove('hidden');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            hiddenElements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+
+</body>
+</html>
