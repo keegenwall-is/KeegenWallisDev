@@ -1,0 +1,173 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>AutoMax Car Store</title>
+    <link rel="icon" href="images/ProfilePic.jpg" type="image/png">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="AboutMe.html">About Me</a>
+            <div class="dropdown">
+                <button class="dropbtn">
+                    My Projects
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <p>Game Development</p>
+                    <a href="PrimalPunchUp.html">★ Primal Punch-Up</a>
+                    <a href="CavedIn.html">★ Caved-In</a>
+                    <a href="OSP.html">Guardian of Geist</a>
+                    <a href="EtherealEnforcers.html">Ethereal Enforcers</a>
+                    <a href="MASHRemake.html">M*A*S*H Remake</a>
+                    <a href="OtherProjects.html">Other Projects</a>
+                    <p>Enterprise Software</p>
+                    <a href="AutoMax.html">★ AutoMax Car Store</a>
+                    <a href="IoTBay.html">IoT Bay</a>
+                </div>
+            </div>
+            <a href="ContactMe.html">Contact</a>
+        </div>
+    </header>
+    <div>
+        <h1>AutoMax Car Store</h1>
+        <img class="hidden" width="10%" src="images/JavaLogo.png">
+        <hr>
+    </div>
+
+    <div class="hidden">
+        <p class="welcome-content">
+            AutoMax is an online software application designed to streamline all stages of the car sales process for both users and staff.
+            To achieve this, all features implemented into the system were designed with user-friendly and intuitive interfaces that allow
+            customers to discuss, ask questions and wishlist different car models, book test drives and purchase cars, all from home. Similarly,
+            the staff interface has a focus on increasing productivity by simplifying monotonous tasks, including writing and filtering end
+            of day sales reports.
+        </p>
+        <img src="images/AutoMax Home.png" , style=width:60%>
+    </div>
+
+    <div class="hidden">
+        <h2>Development Process</h2>
+        <p class="content">
+            AutoMax was created over a <b>series of 3 sprints</b>, R0 - R2, that using <b>MVC and CRUD</b> design patterns saw the development and documentation of 10 total features.
+            Using the <b>agile method</b> of development, both functional and non-functional requirements were turned into user stories which
+            allowed us to priotirize work to create a minimum viable product. User stories were added to an <b>Azure project plan board</b> with
+            cost estimates, data requirements, constraints and risks all being documented to easily <b>communicate with stakeholders</b>.
+            Interaction design models, data and application architecture models as well as a backend database model, allowed all developers to
+            have a clear picture of the final goal of the <b>SQL Database</b> which was especially useful when merging branches on GitHub and
+            <b>managing database conflicts</b>. A link to the full documentation for the project can be found below.
+        </p>
+        <a href="https://github.com/TronKnight/ASD-24">View GitHub Repo</a>
+        <br>
+        <a href="files/ASD Assignment-3.pdf">See full documentation here</a>
+    </div>
+
+    <div class="hidden">
+        <h2>Challenges in Development</h2>
+        <p>As a part of the Advanced Software Design subject of my degree, this project came with many challenges, including:</p>
+    </div>
+
+    <div class="flex-container">
+        <div class="flex-item hidden">
+            <p>
+                <b>Balancing dual-user experiences:</b> AutoMax is a system for both customers and staff to use and
+                so needed to be designed so that different features were accessible to some users and not to others, such as the sales report
+                feature and all CRUD elements being only available for staff to interact with.
+            </p>
+            <img src="images/AutoMax Sales Report.png">
+        </div>
+        <div class="flex-item hidden">
+            <p>
+                <b>Database and Architecture Models:</b> All architecture, interaction and database models were created with line
+                notation that informs the reader of the cardinality of different database objects.
+            </p>
+            <img src="images/AutoMax Database.png">
+        </div>
+        <div class="flex-item hidden">
+            <p>
+                <b>Unit Tests:</b> Writing unit tests ensured that different functions in the Contorller of the MVC were working as intended.
+            </p>
+            <img src="images/AutoMax Unit Test.png">
+        </div>
+        <div class="flex-item hidden">
+            <p>
+                <b>SQL Workbench:</b> Database conflicts were the most difficult merge conflicts to handle when managing different Git branches,
+                but through a the main SQL file, the database was able to be joined and remade using SQL DROP, CREATE and INSERT comands.
+            </p>
+            <img src="images/AutoMax SQL.png">
+        </div>
+    </div>
+
+    <footer class="hidden">
+        <div class="footer-content">
+            <p>&copy; 2024 Keegen Wallis Dev. All Rights Reserved.</p>
+            <a href="https://www.linkedin.com/in/keegen-wallis-613b95286/">
+                <img width="50px" class="footer-href" src="images/LinkedInLogo.webp">
+            </a>
+            <a href="https://snedulekko.itch.io/">
+                <img width="50px" class="footer-href" src="images/ItchLogo.webp">
+            </a>
+            <a href="https://github.com/keegenwall-is">
+                <img width="50px" class="footer-href" src="images/GitHubLogo.png">
+            </a>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const hiddenElements = document.querySelectorAll('.hidden');
+
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        entry.target.classList.remove('hidden');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            hiddenElements.forEach(element => {
+                observer.observe(element);
+            });
+        });
+    </script>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        setInterval(function () {
+            plusSlides(1);
+        }, 5000);
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+</body>
+</html>
